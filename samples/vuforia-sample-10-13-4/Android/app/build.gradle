@@ -68,8 +68,21 @@ android {
         }
     }
 }
-
+apply plugin: 'kotlin-kapt'
 dependencies {
+    //kotlin reflection for moshi working. You can read more at Moshi gitHub
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.20")
+    //moshi
+    implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
+    implementation("com.squareup.moshi:moshi:1.14.0")
+    implementation 'androidx.preference:preference:1.2.0'
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
+
+    //retrofit
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.4.1'
