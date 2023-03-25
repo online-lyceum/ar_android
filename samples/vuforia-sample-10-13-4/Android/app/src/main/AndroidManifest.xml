@@ -38,38 +38,37 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <!--
-            Optional for Vuforia: Add this line to allow Vuforia to use ARCore if it is already
-                                  installed on the device.
-        -->
         <meta-data android:name="com.google.ar.core" android:value="optional" />
 
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".activity.SplashScreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:noHistory="true"
-            android:screenOrientation="landscape"
-            android:theme="@style/FullscreenTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="landscape">
+            android:name=".activity.ChooseNameActivity">
         </activity>
+
         <activity
-            android:name=".VuforiaActivity"
+            android:name=".activity.GuideActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".activity.VuforiaActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:rotationAnimation="seamless"
             android:label="@string/title_activity_vuforia"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/FullscreenTheme">
+            android:parentActivityName=".activity.ChooseNameActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.vuforia.engine.native_sample.MainActivity" />
+                android:value="com.vuforia.engine.native_sample.activity.ChooseNameActivity" />
         </activity>
     </application>
 

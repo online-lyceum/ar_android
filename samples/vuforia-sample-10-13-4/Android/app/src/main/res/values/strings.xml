@@ -12,4 +12,6 @@
 
     <string name="ok">OK</string>
     <string name="error_dialog_title">Vuforia error</string>
+
+    <string name="enter_text">Добро пожаловать!</string>
 </resources>

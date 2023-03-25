@@ -18,6 +18,10 @@ def ARCORE_LIBPATH = "${buildDir}/arcore-native"
 configurations { natives }
 
 android {
+    buildFeatures {
+        viewBinding true
+    }
+
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
     defaultConfig {
