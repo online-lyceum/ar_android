@@ -36,7 +36,7 @@ class GuideActivity: AppCompatActivity() {
         }
 
         if (page == GUIDE_AMOUNT_PAGES){
-            binding.btnPrev.text = "Погнали!"
+            binding.btnNext.text = "Погнали!"
             startMainActivity()
         }
     }

@@ -10,6 +10,7 @@ package com.vuforia.engine.native_sample.activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.vuforia.engine.native_sample.VuforiaActivity
 import com.vuforia.engine.native_sample.databinding.ActivityChooseNameBinding
 
 

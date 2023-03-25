@@ -61,7 +61,7 @@
         </activity>
 
         <activity
-            android:name=".activity.VuforiaActivity"
+            android:name=".VuforiaActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:rotationAnimation="seamless"
             android:label="@string/title_activity_vuforia"
