@@ -831,8 +831,8 @@ AppController::createObservers()
     if (mTarget == IMAGE_TARGET_ID)
     {
         auto imageTargetConfig = vuImageTargetConfigDefault();
-        imageTargetConfig.databasePath = "StonesAndChips.xml";
-        imageTargetConfig.targetName = "stones";
+        imageTargetConfig.databasePath = "UfoFind.xml";
+        imageTargetConfig.targetName = "hiro";
         imageTargetConfig.activate = VU_TRUE;
 
         VuImageTargetCreationError imageTargetCreationError;
