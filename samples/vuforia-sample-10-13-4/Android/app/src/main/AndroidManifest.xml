@@ -41,7 +41,7 @@
         <meta-data android:name="com.google.ar.core" android:value="optional" />
 
         <activity
-            android:name=".activity.SplashScreenActivity"
+            android:name=".SplashScreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
             android:noHistory="true"
             android:exported="true">
@@ -52,11 +52,11 @@
         </activity>
 
         <activity
-            android:name=".activity.ChooseNameActivity">
+            android:name=".ChooseNameActivity">
         </activity>
 
         <activity
-            android:name=".activity.GuideActivity"
+            android:name=".GuideActivity"
             android:exported="true">
         </activity>
 
@@ -65,10 +65,10 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:rotationAnimation="seamless"
             android:label="@string/title_activity_vuforia"
-            android:parentActivityName=".activity.ChooseNameActivity">
+            android:parentActivityName=".ChooseNameActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.vuforia.engine.native_sample.activity.ChooseNameActivity" />
+                android:value="com.vuforia.engine.native_sample.ChooseNameActivity" />
         </activity>
     </application>
 

@@ -5,12 +5,11 @@ Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 
-package com.vuforia.engine.native_sample.activity
+package com.vuforia.engine.native_sample
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.vuforia.engine.native_sample.VuforiaActivity
 import com.vuforia.engine.native_sample.databinding.ActivityChooseNameBinding
 
 
@@ -26,6 +25,14 @@ class ChooseNameActivity : AppCompatActivity() {
             if(binding.editChooseName.text.isNotEmpty()) {
                 startActivity(Intent(this, VuforiaActivity::class.java))
             }
+        }
+    }
+
+    companion object {
+
+        // Used to load the 'VuforiaSample' library on application startup.
+        init {
+            System.loadLibrary("VuforiaSample")
         }
     }
 }

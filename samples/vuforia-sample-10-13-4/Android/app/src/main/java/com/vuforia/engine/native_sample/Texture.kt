@@ -5,7 +5,7 @@ Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 
-package com.vuforia.engine.native_sample.activity
+package com.vuforia.engine.native_sample
 
 import android.content.res.AssetManager
 import android.graphics.BitmapFactory

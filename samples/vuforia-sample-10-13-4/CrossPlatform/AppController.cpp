@@ -25,7 +25,7 @@ extern void* javaVM;
 namespace
 {
 // clang-format off
-constexpr char licenseKey[] = "";
+constexpr char licenseKey[] = "AcIOw8j/////AAABmScUtxyzpk7vkXQL50Yifwh2ViHRSf2J5Z4EbvinRZadvGd6UtRdIuUkaQg8tt/C/6ydLJ9sR+AA8H/+dL0eAk/qDLLHHtYGiZK0lMk5MMCoDZhCwWxa60ViLLfsybs8U3MQdsqmIUMR6swXhBKQDMHw+XKLBD2XRqUefHSyvK3v8gFRWnizjX1EiMmSOB/XXei8EU6hkARA3w6WwFD64rqnzzJSKbxXTZQ+FmrJr8eOfOUJqlQKmT48t0Gqm0QzBnSd7i0n+DtFCzxc5HpL2Km+pca3w3qRdsjpaYo4t3VRWAuJAgTZZPzIGERhex1U48wCxvbg+Y/WTgx8da5GJNZJ7/QjtZtfeyfQHGd+OwN1";
 // clang-format on
 
 constexpr float NEAR_PLANE = 0.01f;

@@ -25,7 +25,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.NavUtils
 import androidx.core.content.ContextCompat
 import androidx.core.view.GestureDetectorCompat
-import com.vuforia.engine.native_sample.activity.Texture
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -115,7 +114,8 @@ class VuforiaActivity : AppCompatActivity(), GLSurfaceView.Renderer, SurfaceHold
 
         // Setup and show a progress indicator
         mProgressIndicatorLayout = View.inflate(
-            applicationContext, R.layout.progress_indicator, null
+            applicationContext,
+            R.layout.progress_indicator, null
         ) as RelativeLayout
 
         addContentView(
