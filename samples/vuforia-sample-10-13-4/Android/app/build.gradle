@@ -91,7 +91,8 @@ dependencies {
 
     implementation files("$VUFORIA_ENGINE_PATH/build/java/VuforiaEngine.jar")
 
-    implementation 'com.google.ar:core:1.31.0' // Add ARCore support
+    implementation 'com.google.ar:core:1.31.0'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'// Add ARCore support
     natives 'com.google.ar:core:1.31.0' // Enabling use of ARCore APIs in the App
 }
 
