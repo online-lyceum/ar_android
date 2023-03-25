@@ -9,11 +9,14 @@ package com.vuforia.engine.native_sample
 
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.location.LocationManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.vuforia.engine.native_sample.databinding.ActivityChooseNameBinding
 import com.vuforia.engine.native_sample.dialog.NoPermissionDialogFragment
+import com.vuforia.engine.native_sample.gson.UserJson
+import com.vuforia.engine.native_sample.retrofit.RetrofitManager
 
 
 class ChooseNameActivity : AppCompatActivity() {
@@ -22,10 +25,7 @@ class ChooseNameActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if(isLocationPermissionGranted()) {
-
-        }
-        else {
+        if(!isLocationPermissionGranted()) {
             val dialog = NoPermissionDialogFragment()
             dialog.show(supportFragmentManager, "noPermissionDialog")
         }
@@ -35,6 +35,10 @@ class ChooseNameActivity : AppCompatActivity() {
 
         binding.buttonContinue.setOnClickListener {
             if(binding.editChooseName.text.isNotEmpty()) {
+                setContentView(R.layout.activity_download)
+                RetrofitManager.putUser(UserJson(binding.editChooseName.text, )){
+                    if(it!=null) startActivity(Intent(this, VuforiaActivity::class.java))
+                }
                 startActivity(Intent(this, VuforiaActivity::class.java))
             }
         }
@@ -62,6 +66,10 @@ class ChooseNameActivity : AppCompatActivity() {
             true
         }
     }
+
+    private fun generateUserObj(name: String, lat: Float, lon: Float, jobTitle: String)
+        = UserJson(name, "$lat $lon", jobTitle)
+
 
     companion object {
 
