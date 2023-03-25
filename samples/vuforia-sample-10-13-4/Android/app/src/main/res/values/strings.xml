@@ -14,4 +14,5 @@
     <string name="error_dialog_title">Vuforia error</string>
 
     <string name="enter_text">Добро пожаловать!</string>
+    <string name="enter_your_name">Напиши свое имя:</string>
 </resources>
