@@ -15,4 +15,6 @@
 
     <string name="enter_text">Добро пожаловать!</string>
     <string name="enter_your_name">Напиши свое имя:</string>
+    <string name="enter_your_job_title">Напиши свою должность:</string>
+    <string name="fields_can_not_be_empty">Имя и должность не могут быть пустыми!</string>
 </resources>

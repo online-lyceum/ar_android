@@ -39,7 +39,7 @@ import kotlin.concurrent.schedule
  * Activity to demonstrate how to use Vuforia Image Target and Model Target features,
  * Video Background rendering and Vuforia lifecycle.
  */
-class VuforiaActivity : AppCompatActivity(), GLSurfaceView.Renderer, SurfaceHolder.Callback {
+open class VuforiaActivity : AppCompatActivity(), GLSurfaceView.Renderer, SurfaceHolder.Callback {
 
     /**
      * The permissions that we need to run the Vuforia Activity

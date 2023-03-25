@@ -29,6 +29,9 @@
     -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
@@ -64,7 +67,7 @@
         </activity>
 
         <activity
-            android:name=".VuforiaActivity"
+            android:name=".MyVuforiaActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:rotationAnimation="seamless"
             android:label="@string/title_activity_vuforia"

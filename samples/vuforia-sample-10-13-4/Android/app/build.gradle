@@ -70,6 +70,13 @@ android {
 }
 apply plugin: 'kotlin-kapt'
 dependencies {
+    //bluetooth beacons
+    implementation files('libs/app-debug.aar')
+    implementation files('libs/data-debug.aar')
+    implementation files('libs/domain-debug.aar')
+    implementation 'org.altbeacon:android-beacon-library:2.19.5'
+    implementation 'com.lemmingapex.trilateration:trilateration:1.0.2'
+
     //retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"

@@ -22,10 +22,32 @@
         android:id="@+id/edit_choose_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
         app:layout_constraintTop_toBottomOf="@+id/text_label_choose_name"
         android:layout_marginHorizontal="16dp"
         android:inputType="textPersonName"/>
+
+    <TextView
+        android:id="@+id/text_label_choose_job_title"
+        style="@style/textOnSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_job_title"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_choose_name" />
+
+    <EditText
+        android:id="@+id/edit_choose_job_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/text_label_choose_job_title"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="16dp"/>
 
     <Button
         android:id="@+id/button_continue"
