@@ -16,7 +16,7 @@ class MyVuforiaActivity: VuforiaActivity() {
         intent.extras?.let {
             if(it.containsKey(INTENT_KEY_USER_NAME) && it.containsKey(INTENT_KEY_JOB_TITLE)) {
                 userName = it.getString(INTENT_KEY_USER_NAME)!!
-                jobTitle = it.getString(INTENT_KEY_USER_NAME)!!
+                jobTitle = it.getString(INTENT_KEY_JOB_TITLE)!!
             }
         }
 

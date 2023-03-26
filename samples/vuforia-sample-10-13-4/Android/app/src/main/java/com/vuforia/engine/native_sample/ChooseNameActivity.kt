@@ -103,8 +103,6 @@ class ChooseNameActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val AMOUNT_PERMISSIONS_AFTER_S = 3
-        private const val AMOUNT_PERMISSIONS_BEFORE_S = 2
         // Used to load the 'VuforiaSample' library on application startup.
         init {
             System.loadLibrary("VuforiaSample")
