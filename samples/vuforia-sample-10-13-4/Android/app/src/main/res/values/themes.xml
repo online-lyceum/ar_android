@@ -9,6 +9,6 @@
         <item name="colorSecondaryDark">@color/colorSecondaryDark</item>
         <item name="colorOnSecondary">@color/colorOnSecondary</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorBackground">?attr/colorSecondary</item>
+        <item name="android:colorBackground">?attr/colorSecondary      </item>
     </style>
 </resources>

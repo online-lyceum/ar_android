@@ -53,12 +53,13 @@ class ChooseNameActivity : AppCompatActivity() {
             onAllPermissionsGranted()
             return
         }
-
-        ActivityCompat.requestPermissions(
-            this,
-            permissionsToCheck.toTypedArray(),
-            0
-        )
+        else {
+            ActivityCompat.requestPermissions(
+                this,
+                permissionsToCheck.toTypedArray(),
+                0
+            )
+        }
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {

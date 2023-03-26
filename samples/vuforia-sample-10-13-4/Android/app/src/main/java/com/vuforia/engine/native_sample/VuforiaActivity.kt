@@ -135,6 +135,8 @@ open class VuforiaActivity : AppCompatActivity(), GLSurfaceView.Renderer, Surfac
         }
 
         mGestureDetector = GestureDetectorCompat(this, GestureListener())
+
+        val devicePoseConfig =
     }
 
 

@@ -14,10 +14,10 @@ object BeaconHelper {
     private lateinit var indoorService: IndoorService
 
     private val beaconsPositions = listOf(
-        StateEnvironment("E4:C1:3F:EF:49:D7", Point(0.0, 0.0)),
-        StateEnvironment("D3:81:75:66:79:B8", Point(7.0, 0.0)),
-        StateEnvironment("CF:CA:06:0F:D0:F9", Point(10.0, 7.0)),
-        StateEnvironment("E6:96:DA:5C:82:59", Point(0.0, 7.0))
+        StateEnvironment("E4:C1:3F:EF:49:D7", Point(0.0, 5.0)),
+        StateEnvironment("D3:81:75:66:79:B8", Point(0.0, 0.0)),
+        StateEnvironment("CF:CA:06:0F:D0:F9", Point(7.0, 0.0)),
+        StateEnvironment("E6:96:DA:5C:82:59", Point(7.0, 5.0))
     )
 
     private val beaconsDistances = mutableMapOf<String, Double>()
