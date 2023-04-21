@@ -1,8 +1,0 @@
-<resources>
-    <style name="textOnPrimary">
-        <item name="android:textColor">?attr/colorOnPrimary</item>
-    </style>
-    <style name="textOnSecondary">
-        <item name="android:textColor">?attr/colorOnSecondary</item>
-    </style>
-</resources>

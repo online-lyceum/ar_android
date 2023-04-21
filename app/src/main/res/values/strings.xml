@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UfoFInd</string>
+    <string name="apply">Погнали!</string>
+    <string name="next">Далее</string>
+    <string name="fields_can_not_be_empty">Текстовые поля не могут быть пустыми!</string>
+    <string name="no_internet">Пользователи не найдены.</string>
+    <string name="choose_user_you_want_to_find">Выберите человека, которого хотите найти</string>
+    <string name="enter_your_name">Введите имя:</string>
+    <string name="enter_your_job_title">Введите должность:</string>
+    <string name="name">Имя:</string>
+    <string name="job_title">Должность:</string>
+    <string name="cancel">Назад</string>
+</resources>
